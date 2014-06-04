@@ -8,15 +8,8 @@
         var chkCount = 0;
         var chkSelectedCount = 0;
         $(document).ready(function () {
-            //    $("#select_all").live("click", function(){
-            //            $("input").prop("checked", $(this).prop("checked"));
-            //    }
-            //});
+
             $("#select_all").click(function () {
-                //var chk = $("#select_all").is(":checked");
-                //alert("Hi this " + chk);
-                // alert($(".chkSelectedCase").length);
-                //$("input[type='checkbox'].chkSelectedCase").attr("checked", chk);
                 $(".chkSelectedCase").prop("checked", this.checked);
             });
 
@@ -29,9 +22,6 @@
                     $("#select_all").removeAttr("checked");
                     $("#select_all").prop("checked", false);
                 }
-
-
-
             });
         });
     </script>
