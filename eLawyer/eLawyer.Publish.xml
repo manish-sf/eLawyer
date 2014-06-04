@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Build\eLawyer280214" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Views/Cases/List.aspx" publishTime="01/30/2014 18:38:30" />
+    <file relUrl="Scripts/jquery.validate-1.8.1.min.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Images/ajax-loader.gif" publishTime="06/09/2012 17:09:20" />
+    <file relUrl="Content/jquery-ui.css" publishTime="12/28/2013 17:09:56" />
+    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Global.asax" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Content/jquery-ui-1.8.18.custom.css" publishTime="08/29/2013 18:32:12" />
+    <file relUrl="Scripts/jquery.FilterExtender.min.js" publishTime="08/29/2013 14:54:36" />
+    <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/jsDatePick.jquery.full.1.3.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Cases/NewHearing.aspx" publishTime="01/30/2014 18:38:29" />
+    <file relUrl="Images/advocate symbol copy.png" publishTime="12/28/2013 01:12:58" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="12/27/2013 14:04:14" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/jsDatePick.full.1.3.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Shared/CaseHearingUserControl.ascx" publishTime="01/30/2014 19:39:52" />
+    <file relUrl="Scripts/jquery.validate.min.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Cases/EditHearing.aspx" publishTime="01/30/2014 19:41:17" />
+    <file relUrl="Views/Cases/Create.aspx" publishTime="01/30/2014 15:05:17" />
+    <file relUrl="Scripts/jquery-latest.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="bin/eLawyer.dll" publishTime="02/28/2014 19:33:21" />
+    <file relUrl="Images/calendar-icon.png" publishTime="08/29/2013 18:34:12" />
+    <file relUrl="Scripts/jquery.cookie.js" publishTime="08/29/2013 14:54:36" />
+    <file relUrl="Scripts/jquery.validate.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/jquery-1.10.1.min.js" publishTime="12/20/2013 15:21:42" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Account/LogOn.aspx" publishTime="12/29/2013 07:06:00" />
+    <file relUrl="Views/Account/ChangePassword.aspx" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Views/Account/Register.aspx" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Scripts/jsDatePick.min.1.3.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Images/del.png" publishTime="11/26/2013 14:10:10" />
+    <file relUrl="Images/Pencil-icon.png" publishTime="12/06/2013 16:43:56" />
+    <file relUrl="Views/Cases/CaseAlerts.aspx" publishTime="01/31/2014 12:11:36" />
+    <file relUrl="Content/mystyle.css" publishTime="12/29/2013 07:24:50" />
+    <file relUrl="Views/Account/ChangePasswordSuccess.aspx" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="01/30/2014 18:42:07" />
+    <file relUrl="bin/eLawyer.pdb" publishTime="02/28/2014 19:33:21" />
+    <file relUrl="Images/images.jpg" publishTime="12/28/2013 01:16:24" />
+    <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Scripts/jsDatePick.jquery.min.1.3.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Scripts/jquery.js" publishTime="08/29/2013 14:54:36" />
+    <file relUrl="Views/Home/About.aspx" publishTime="12/27/2013 14:09:20" />
+    <file relUrl="Scripts/jquery-1.7.min.js" publishTime="12/24/2013 17:38:36" />
+    <file relUrl="Scripts/jquery.form.js" publishTime="08/29/2013 14:54:36" />
+    <file relUrl="Content/Site.css" publishTime="12/29/2013 08:07:28" />
+    <file relUrl="Images/advocate_190.jpg" publishTime="12/28/2013 01:17:58" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/jquery-ui-1.8.13.custom.min.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="08/29/2013 14:54:44" />
+    <file relUrl="Views/Advocate/List.aspx" publishTime="01/30/2014 14:47:15" />
+    <file relUrl="Web.config" publishTime="02/28/2014 19:33:21" />
+    <file relUrl="Views/Web.config" publishTime="12/27/2013 13:34:26" />
+    <file relUrl="Scripts/jquery.1.4.2.js" publishTime="08/29/2013 14:54:36" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/29/2013 14:54:44" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,10 @@
+C:\Project\eLawyer\eLawyer\bin\eLawyer.dll
+C:\Project\eLawyer\eLawyer\bin\eLawyer.pdb
+C:\Project\eLawyer\eLawyer\obj\Debug\ResolveAssemblyReference.cache
+C:\Project\eLawyer\eLawyer\obj\Debug\eLawyer.dll
+C:\Project\eLawyer\eLawyer\obj\Debug\eLawyer.pdb
+C:\Projects\Dhanbad\eLawyer\eLawyer\bin\eLawyer.dll
+C:\Projects\Dhanbad\eLawyer\eLawyer\bin\eLawyer.pdb
+C:\Projects\Dhanbad\eLawyer\eLawyer\obj\Debug\eLawyer.dll
+C:\Projects\Dhanbad\eLawyer\eLawyer\obj\Debug\eLawyer.pdb
+C:\Projects\Dhanbad\eLawyer\eLawyer\obj\Debug\eLawyer.csprojResolveAssemblyReference.cache

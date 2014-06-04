@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eLawyer", "eLawyer\eLawyer.csproj", "{A6DF8B39-6BAB-4159-A3EC-14EE8BEB32DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DF8B39-6BAB-4159-A3EC-14EE8BEB32DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DF8B39-6BAB-4159-A3EC-14EE8BEB32DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DF8B39-6BAB-4159-A3EC-14EE8BEB32DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DF8B39-6BAB-4159-A3EC-14EE8BEB32DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

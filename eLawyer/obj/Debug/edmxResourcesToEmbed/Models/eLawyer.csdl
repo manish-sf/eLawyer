@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eLawyerModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="eLawyerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="associated_Users" EntityType="eLawyerModel.associated_Users" />
+    <EntitySet Name="Clients" EntityType="eLawyerModel.Clients" />
+    <EntitySet Name="Countries" EntityType="eLawyerModel.Countries" />
+    <EntitySet Name="EXPENSESHEAD" EntityType="eLawyerModel.EXPENSESHEAD" />
+    <EntitySet Name="Genders" EntityType="eLawyerModel.Genders" />
+    <EntitySet Name="LedgerTypes" EntityType="eLawyerModel.LedgerTypes" />
+    <EntitySet Name="PaymentHeads" EntityType="eLawyerModel.PaymentHeads" />
+    <EntitySet Name="PaymentModes" EntityType="eLawyerModel.PaymentModes" />
+    <EntitySet Name="States" EntityType="eLawyerModel.States" />
+    <EntitySet Name="Payments" EntityType="eLawyerModel.Payments" />
+    <EntitySet Name="vw_ClientList" EntityType="eLawyerModel.vw_ClientList" />
+    <EntitySet Name="vw_PaymentLists" EntityType="eLawyerModel.vw_PaymentLists" />
+    <EntitySet Name="vw_ExpenseHeads" EntityType="eLawyerModel.vw_ExpenseHeads" />
+    <EntitySet Name="aspnet_Applications" EntityType="eLawyerModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Membership" EntityType="eLawyerModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_Paths" EntityType="eLawyerModel.aspnet_Paths" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="eLawyerModel.aspnet_PersonalizationAllUsers" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="eLawyerModel.aspnet_PersonalizationPerUser" />
+    <EntitySet Name="aspnet_Profile" EntityType="eLawyerModel.aspnet_Profile" />
+    <EntitySet Name="aspnet_Roles" EntityType="eLawyerModel.aspnet_Roles" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="eLawyerModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_Users" EntityType="eLawyerModel.aspnet_Users" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="eLawyerModel.aspnet_WebEvent_Events" />
+    <EntitySet Name="vw_aspnet_Applications" EntityType="eLawyerModel.vw_aspnet_Applications" />
+    <EntitySet Name="vw_aspnet_MembershipUsers" EntityType="eLawyerModel.vw_aspnet_MembershipUsers" />
+    <EntitySet Name="vw_aspnet_Profiles" EntityType="eLawyerModel.vw_aspnet_Profiles" />
+    <EntitySet Name="vw_aspnet_Roles" EntityType="eLawyerModel.vw_aspnet_Roles" />
+    <EntitySet Name="vw_aspnet_Users" EntityType="eLawyerModel.vw_aspnet_Users" />
+    <EntitySet Name="vw_aspnet_UsersInRoles" EntityType="eLawyerModel.vw_aspnet_UsersInRoles" />
+    <EntitySet Name="vw_aspnet_WebPartState_Paths" EntityType="eLawyerModel.vw_aspnet_WebPartState_Paths" />
+    <EntitySet Name="vw_aspnet_WebPartState_Shared" EntityType="eLawyerModel.vw_aspnet_WebPartState_Shared" />
+    <EntitySet Name="vw_aspnet_WebPartState_User" EntityType="eLawyerModel.vw_aspnet_WebPartState_User" />
+    <EntitySet Name="vw_Users_Lists" EntityType="eLawyerModel.vw_Users_Lists" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__4AB81AF0" Association="eLawyerModel.FK__aspnet_Me__Appli__4AB81AF0">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__03F0984C" Association="eLawyerModel.FK__aspnet_Pa__Appli__03F0984C">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__6D0D32F4" Association="eLawyerModel.FK__aspnet_Ro__Appli__6D0D32F4">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__36B12243" Association="eLawyerModel.FK__aspnet_Us__Appli__36B12243">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__4BAC3F29" Association="eLawyerModel.FK__aspnet_Me__UserI__4BAC3F29">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__0B91BA14" Association="eLawyerModel.FK__aspnet_Pe__PathI__0B91BA14">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__114A936A" Association="eLawyerModel.FK__aspnet_Pe__PathI__114A936A">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__123EB7A3" Association="eLawyerModel.FK__aspnet_Pe__UserI__123EB7A3">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__619B8048" Association="eLawyerModel.FK__aspnet_Pr__UserI__619B8048">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="aspnet_UsersInRoles" Association="eLawyerModel.aspnet_UsersInRoles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <EntitySet Name="CaseNatures" EntityType="eLawyerModel.CaseNatures" />
+    <EntitySet Name="Cases" EntityType="eLawyerModel.Cases" />
+    <EntitySet Name="vw_CaseLists" EntityType="eLawyerModel.vw_CaseLists" />
+    <EntitySet Name="CaseHearings" EntityType="eLawyerModel.CaseHearings" />
+  </EntityContainer>
+  <EntityType Name="associated_Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Guid" Name="Membership_UserId" />
+    <Property Type="Int32" Name="ClientId" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AdminstratorId" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Lane" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="GenderId" />
+    <Property Type="Int32" Name="StateId" />
+    <Property Type="Int32" Name="CountryId" />
+    <Property Type="String" Name="Zip" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Cell" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ContractStartDate" />
+    <Property Type="DateTime" Name="ContractEndDate" />
+    <Property Type="DateTime" Name="CreateDate" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" />
+    <Property Type="Guid" Name="UpdatedBy" />
+    <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="ContentType" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Code" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EXPENSESHEAD">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CODE" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LedgerTypeId" />
+    <Property Type="Double" Name="OP_BAL" />
+    <Property Type="Int32" Name="ClientId" />
+  </EntityType>
+  <EntityType Name="Genders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LedgerTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Type" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PaymentHeads">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PaymentHead" MaxLength="70" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PaymentModes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Mode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CountryId" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ClientId" Nullable="false" />
+    <Property Type="String" Name="VoucherNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Date" Nullable="false" />
+    <Property Type="String" Name="PaidTo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PaymentModeId" />
+    <Property Type="Int32" Name="ExpenseHeadId" Nullable="false" />
+    <Property Type="Decimal" Name="Amounts" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="Narration" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHQ_NO" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CHQ_DATE" />
+    <Property Type="String" Name="BANK" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CaseId" />
+  </EntityType>
+  <EntityType Name="vw_ClientList">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="LastUpdated" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AdminstratorId" />
+    <Property Type="String" Name="Lane" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zip" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone2" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Cell" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ContractStartDate" />
+    <Property Type="DateTime" Name="ContractEndDate" />
+    <Property Type="DateTime" Name="CreateDate" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" />
+    <Property Type="Guid" Name="UpdatedBy" />
+    <Property Type="Int32" Name="StateId" />
+    <Property Type="String" Name="StateName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CountryId" />
+    <Property Type="String" Name="CountryName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CountryCode" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_PaymentLists">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ClientId" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="PaymentMode" />
+      <PropertyRef Name="Amounts" />
+      <PropertyRef Name="Remarks" />
+      <PropertyRef Name="ExpenseHeadId" />
+      <PropertyRef Name="CaseNumber" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="ClientId" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" />
+    <Property Type="String" Name="PaidTo" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentMode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExpenseHeadCode" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExpenseHeadName" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LedgerType" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Amounts" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="String" Name="Narration" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LedgerTypeId" />
+    <Property Type="String" Name="VoucherNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CHQ_NO" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CHQ_DATE" />
+    <Property Type="String" Name="BANK" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remarks" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ExpenseHeadId" Nullable="false" />
+    <Property Type="Int32" Name="PaymentModeId" />
+    <Property Type="Int32" Name="CaseId" />
+    <Property Type="String" Name="CaseNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_ExpenseHeads">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="CODE" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NAME" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LedgerTypeId" />
+    <Property Type="String" Name="LedgerType" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="OP_BAL" />
+    <Property Type="Int32" Name="ClientId" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Type="String" Name="ApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="eLawyerModel.FK__aspnet_Me__Appli__4AB81AF0" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="eLawyerModel.FK__aspnet_Pa__Appli__03F0984C" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="eLawyerModel.FK__aspnet_Ro__Appli__6D0D32F4" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="eLawyerModel.FK__aspnet_Us__Appli__36B12243" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PasswordFormat" Nullable="false" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobilePIN" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordQuestion" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordAnswer" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAttemptWindowStart" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAnswerAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAnswerAttemptWindowStart" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="eLawyerModel.FK__aspnet_Me__Appli__4AB81AF0" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="eLawyerModel.FK__aspnet_Me__UserI__4BAC3F29" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="String" Name="Path" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredPath" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="eLawyerModel.FK__aspnet_Pa__Appli__03F0984C" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="eLawyerModel.FK__aspnet_Pe__PathI__0B91BA14" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="eLawyerModel.FK__aspnet_Pe__PathI__114A936A" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="Binary" Name="PageSettings" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="eLawyerModel.FK__aspnet_Pe__PathI__0B91BA14" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="PathId" />
+    <Property Type="Guid" Name="UserId" />
+    <Property Type="Binary" Name="PageSettings" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="eLawyerModel.FK__aspnet_Pe__PathI__114A936A" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Users" Relationship="eLawyerModel.FK__aspnet_Pe__UserI__123EB7A3" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="PropertyNames" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PropertyValuesString" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="PropertyValuesBinary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Users" Relationship="eLawyerModel.FK__aspnet_Pr__UserI__619B8048" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="eLawyerModel.FK__aspnet_Ro__Appli__6D0D32F4" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="eLawyerModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Type="String" Name="Feature" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CompatibleSchemaVersion" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsCurrentVersion" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="eLawyerModel.FK__aspnet_Us__Appli__36B12243" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="eLawyerModel.FK__aspnet_Me__UserI__4BAC3F29" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="eLawyerModel.FK__aspnet_Pe__UserI__123EB7A3" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="eLawyerModel.FK__aspnet_Pr__UserI__619B8048" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="eLawyerModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Type="String" Name="EventId" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Type="DateTime" Name="EventTimeUtc" Nullable="false" />
+    <Property Type="DateTime" Name="EventTime" Nullable="false" />
+    <Property Type="String" Name="EventType" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="EventSequence" Nullable="false" Precision="19" Scale="0" />
+    <Property Type="Decimal" Name="EventOccurrence" Nullable="false" Precision="19" Scale="0" />
+    <Property Type="Int32" Name="EventCode" Nullable="false" />
+    <Property Type="Int32" Name="EventDetailCode" Nullable="false" />
+    <Property Type="String" Name="Message" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ApplicationPath" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ApplicationVirtualPath" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MachineName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RequestUrl" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExceptionType" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Details" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationName" />
+      <PropertyRef Name="LoweredApplicationName" />
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Type="String" Name="ApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredApplicationName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_MembershipUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="PasswordFormat" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="IsLockedOut" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="LastLoginDate" />
+      <PropertyRef Name="LastPasswordChangedDate" />
+      <PropertyRef Name="LastLockoutDate" />
+      <PropertyRef Name="FailedPasswordAttemptCount" />
+      <PropertyRef Name="FailedPasswordAttemptWindowStart" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptCount" />
+      <PropertyRef Name="FailedPasswordAnswerAttemptWindowStart" />
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="PasswordFormat" Nullable="false" />
+    <Property Type="String" Name="MobilePIN" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordQuestion" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordAnswer" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAttemptWindowStart" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAnswerAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="FailedPasswordAnswerAttemptWindowStart" Nullable="false" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Profiles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+    <Property Type="Int32" Name="DataSize" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Roles">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="RoleName" />
+      <PropertyRef Name="LoweredRoleName" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_Users">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="LoweredUserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Paths">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="Path" />
+      <PropertyRef Name="LoweredPath" />
+    </Key>
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="String" Name="Path" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredPath" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_Shared">
+    <Key>
+      <PropertyRef Name="PathId" />
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="PathId" Nullable="false" />
+    <Property Type="Int32" Name="DataSize" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_aspnet_WebPartState_User">
+    <Key>
+      <PropertyRef Name="LastUpdatedDate" />
+    </Key>
+    <Property Type="Guid" Name="PathId" />
+    <Property Type="Guid" Name="UserId" />
+    <Property Type="Int32" Name="DataSize" />
+    <Property Type="DateTime" Name="LastUpdatedDate" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vw_Users_Lists">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="LoweredUserName" />
+      <PropertyRef Name="IsAnonymous" />
+      <PropertyRef Name="LastActivityDate" />
+      <PropertyRef Name="ApplicationId" />
+      <PropertyRef Name="IsApproved" />
+      <PropertyRef Name="IsLockedOut" />
+      <PropertyRef Name="CreateDate" />
+      <PropertyRef Name="LastLoginDate" />
+      <PropertyRef Name="FailedPasswordAttemptCount" />
+      <PropertyRef Name="LastPasswordChangedDate" />
+      <PropertyRef Name="LastLockoutDate" />
+    </Key>
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredUserName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileAlias" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsAnonymous" Nullable="false" />
+    <Property Type="DateTime" Name="LastActivityDate" Nullable="false" />
+    <Property Type="Guid" Name="RoleId" />
+    <Property Type="String" Name="RoleName" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredRoleName" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoweredEmail" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsApproved" Nullable="false" />
+    <Property Type="Boolean" Name="IsLockedOut" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="false" />
+    <Property Type="Int32" Name="FailedPasswordAttemptCount" Nullable="false" />
+    <Property Type="DateTime" Name="LastPasswordChangedDate" Nullable="false" />
+    <Property Type="DateTime" Name="LastLockoutDate" Nullable="false" />
+    <Property Type="Int32" Name="ClientId" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Lane" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Zip" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ClientEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ContractStartDate" />
+    <Property Type="DateTime" Name="ContractEndDate" />
+    <Property Type="String" Name="StateName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountryName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cell" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__4AB81AF0">
+    <End Type="eLawyerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__03F0984C">
+    <End Type="eLawyerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__6D0D32F4">
+    <End Type="eLawyerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__36B12243">
+    <End Type="eLawyerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__4BAC3F29">
+    <End Type="eLawyerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__0B91BA14">
+    <End Type="eLawyerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_PersonalizationAllUsers" Role="aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__114A936A">
+    <End Type="eLawyerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="0..1" />
+    <End Type="eLawyerModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__123EB7A3">
+    <End Type="eLawyerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="0..1" />
+    <End Type="eLawyerModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__619B8048">
+    <End Type="eLawyerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="eLawyerModel.aspnet_Profile" Role="aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="aspnet_UsersInRoles">
+    <End Type="eLawyerModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+    <End Type="eLawyerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+  </Association>
+  <EntityType Name="CaseNatures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Nature" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cases">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ClientId" />
+    <Property Type="String" Name="CaseNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EnrollmentDate" />
+    <Property Type="String" Name="JudgeName" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CourtName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstParty" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstPartyAddress" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondParty" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyAddress" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Status" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="NextDate" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="FirstHearingDate" />
+    <Property Type="String" Name="MyPartyName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MyPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsFromFirstParty" />
+    <Property Type="Boolean" Name="IsFromSecondParty" />
+    <Property Type="String" Name="FirstPartyAliase" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyAliase" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CaseNatureId" />
+    <Property Type="Boolean" Name="IsDeleted" />
+  </EntityType>
+  <EntityType Name="vw_CaseLists">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="CaseNumber" />
+      <PropertyRef Name="IsActive" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ClientId" />
+    <Property Type="String" Name="CaseNumber" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="EnrollmentDate" />
+    <Property Type="String" Name="JudgeName" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CourtName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstParty" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstPartyAddress" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondParty" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyAddress" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Status" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="NextDate" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="FirstHearingDate" />
+    <Property Type="String" Name="MyPartyName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MyPartyPhone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsFromFirstParty" />
+    <Property Type="Boolean" Name="IsFromSecondParty" />
+    <Property Type="String" Name="FirstPartyAliase" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SecondPartyAliase" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CaseNatureId" />
+    <Property Type="String" Name="Nature" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" />
+  </EntityType>
+  <EntityType Name="CaseHearings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CaseId" />
+    <Property Type="DateTime" Name="HearingDate" />
+    <Property Type="String" Name="MyRemarks" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="NextDate" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="String" Name="Descriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsDeleted" />
+  </EntityType>
+</Schema>
